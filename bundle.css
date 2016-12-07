@@ -6,6 +6,7 @@ body, html {width:100%;height:100%; font-size: 14px;}
 
 
 html {
+  font-family: 'Slabo 27px', serif;
   background: #f8f4f1;
 }
 
@@ -35,7 +36,6 @@ header span.name{
 }
 
 header a.email{
-  font-family: 'Slabo 27px', serif;
   display: block;
   text-align: center;
   font-size: 1.2rem;
@@ -76,7 +76,7 @@ hr {
   margin: 0px;
   border: none;
   height: 1px;
-  background: #555;
+  background: #ddd;
   overflow: hidden;
   width: 75%;
   margin: 0 auto;
@@ -96,6 +96,26 @@ a:hover{
   text-decoration: underline;
 }
 
+
+#vignette.pop {
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  right: 0;
+  background:rgba(0,0,0,0.8);
+  transition: background 0.3s ease;
+  z-index: 99;
+}
+#vignette.pop img {
+  position:fixed;
+  left:50%;
+  top:50%;
+  margin-left: -50%;
+  margin-top: -50%;
+}
+
+
 @media (max-width: 880px) {
 
   body {
@@ -110,6 +130,10 @@ a:hover{
     width: 70%;
   }
 
+  header {
+    padding-bottom: 25px;
+  }
+
   header span.name {
     font-size: 1.3rem;
     line-height: 50px;
@@ -121,7 +145,7 @@ a:hover{
   footer {
     line-height: 12px;
     font-size: 0.8rem;
+    padding-top: 5px;
   }
-
 
 }
