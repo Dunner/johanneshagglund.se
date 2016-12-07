@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldSET,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;text-decoration:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}*,*:before,*:after{box-sizing:border-box;position:relative;}
+* {margin:0;padding:0;box-sizing:border-box;}
+body, html {width:100%;height:100%; font-size: 14px;}
+
+
+html {
+  background: #f8f4f1;
+}
+
+body {
+  margin: 10px auto 0 auto;
+  width: 70%;
+  overflow-x: hidden;
+}
+
+header {
+  height: auto;
+  line-height: 40px;
+  padding: 30px 5px 50px 5px;
+}
+
+header span.name{
+  display: block;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: 0.2vw;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 80px;
+}
+
+header a.email{
+  font-family: 'Slabo 27px', serif;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer {
+  padding-top: 15px;
+  padding-bottom: 40px;
+  margin-bottom: 70px;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+footer span.materials {
+ display:block;
+ padding-bottom: 4px;
+}
+footer span.dimensions {
+ display:block;
+ margin-bottom: 75px;
+}
+
+
+
+#vignette {
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+
+#vignette img{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+hr {
+  margin: 0px;
+  border: none;
+  height: 1px;
+  background: #555;
+  overflow: hidden;
+  width: 75%;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  user-select: all;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 880px) {
+
+  body {
+    width: calc( 100% - 20px );
+  }
+
+  #vignette {
+    padding: 10px 0px;
+  }
+
+  hr {
+    width: 70%;
+  }
+
+  header span.name {
+    font-size: 1.3rem;
+    line-height: 50px;
+  } 
+  header a.email {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    line-height: 12px;
+    font-size: 0.8rem;
+  }
+
+
+}
